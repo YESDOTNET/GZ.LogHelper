@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net5.0;netcoreapp3.1;netstandard2.1;net40;net45;net46</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1001</Version>
+    <Version>1.0.1002</Version>
     <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/YESDOTNET/GZ.LogHelper</RepositoryUrl>
     <PackageReleaseNotes>开源组件,GZ日志记录组件
