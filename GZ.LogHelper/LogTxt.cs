@@ -9,10 +9,16 @@ namespace GZ.LogHelper
 {
     public class LogTxt : ILog
     {
+        private string LogRootPath { get; set; }
+        public LogTxt(string rootPath)
+        {
+            
+            LogRootPath = rootPath;
+        }
 
         string getFileName(string type)
         {
-            string fileName = System.IO.Path.Combine(LogConfig.LogRoot, type, DateTime.Now.ToString("yyyy-MM-dd") + ".log");
+            string fileName = System.IO.Path.Combine(LogRootPath, type, DateTime.Now.ToString("yyyy-MM-dd") + ".log");
             string path = Path.GetDirectoryName(fileName);
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
