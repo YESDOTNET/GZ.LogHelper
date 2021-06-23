@@ -4,7 +4,7 @@
     <TargetFrameworks>net5.0;netcoreapp3.1;netstandard2.1;net40;net45;net46</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.1001</Version>
-    <PackageIcon>GZ-32x32.png</PackageIcon>
+    <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/YESDOTNET/GZ.LogHelper</RepositoryUrl>
     <PackageReleaseNotes>开源组件,GZ日志记录组件
 https://github.com/YESDOTNET/GZ.LogHelper</PackageReleaseNotes>
@@ -15,12 +15,10 @@ https://github.com/YESDOTNET/GZ.LogHelper</Description>
     <Company>南阳君创信息技术有限公司</Company>
     <Authors>GarsonZhang</Authors>
   </PropertyGroup>
-
-  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <None Include="..\GZ-32x32.png">
+  <ItemGroup>
+    <None Include="..\logo.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
-
 </Project>
